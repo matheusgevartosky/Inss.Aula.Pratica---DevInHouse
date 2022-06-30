@@ -7,8 +7,8 @@ using Lib.InssAulaPratica.Domain.Models;
 
 namespace Lib.InssAulaPratica.Domain.Interfaces
 {
-    internal interface ISalarioService
+    public interface ISalarioService
     {
-        DescontoSalario CalcularInss(Salario salario);
+        ServiceResposta<DescontoSalario> CalcularInss(Salario salario);
     }
 }
